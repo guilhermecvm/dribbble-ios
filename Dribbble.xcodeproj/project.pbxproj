@@ -22,6 +22,8 @@
 		6BCBA2071ABDF80300F6F137 /* ShotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA2061ABDF80300F6F137 /* ShotTableViewCell.swift */; };
 		6BCBA2091ABDF8D400F6F137 /* Alamofire-ResponseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA2081ABDF8D400F6F137 /* Alamofire-ResponseImage.swift */; };
 		6BCBA20B1ABDF93100F6F137 /* ShotListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA20A1ABDF93100F6F137 /* ShotListTableViewController.swift */; };
+		6BF358971ABE1DE100BACBA8 /* ShotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF358961ABE1DE100BACBA8 /* ShotDetailViewController.swift */; };
+		6BF358991ABE24E900BACBA8 /* html2String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF358981ABE24E900BACBA8 /* html2String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		6BCBA2061ABDF80300F6F137 /* ShotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotTableViewCell.swift; sourceTree = "<group>"; };
 		6BCBA2081ABDF8D400F6F137 /* Alamofire-ResponseImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-ResponseImage.swift"; sourceTree = "<group>"; };
 		6BCBA20A1ABDF93100F6F137 /* ShotListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotListTableViewController.swift; sourceTree = "<group>"; };
+		6BF358961ABE1DE100BACBA8 /* ShotDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotDetailViewController.swift; sourceTree = "<group>"; };
+		6BF358981ABE24E900BACBA8 /* html2String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = html2String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				6BCBA20A1ABDF93100F6F137 /* ShotListTableViewController.swift */,
+				6BF358961ABE1DE100BACBA8 /* ShotDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			children = (
 				6BCBA2041ABDF35A00F6F137 /* Alamofire-SwiftyJSON.swift */,
 				6BCBA2081ABDF8D400F6F137 /* Alamofire-ResponseImage.swift */,
+				6BF358981ABE24E900BACBA8 /* html2String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -309,6 +315,8 @@
 				6BCBA20B1ABDF93100F6F137 /* ShotListTableViewController.swift in Sources */,
 				6BCBA2011ABDEC7900F6F137 /* Player.swift in Sources */,
 				6BCBA1FA1ABDEADE00F6F137 /* Shot.swift in Sources */,
+				6BF358991ABE24E900BACBA8 /* html2String.swift in Sources */,
+				6BF358971ABE1DE100BACBA8 /* ShotDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

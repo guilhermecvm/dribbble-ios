@@ -21,7 +21,7 @@ class DribbbleAPI {
                 
                 for (index: String, shotJson:JSON) in json["shots"] {
                     var player = Player(id: shotJson["player"]["id"].intValue, name: shotJson["player"]["name"].stringValue, avatarUrl: shotJson["player"]["avatar_url"].stringValue)
-                    var shot = Shot(id: shotJson["id"].intValue, title: shotJson["title"].stringValue, viewsCount: shotJson["views_count"].intValue, player: player, imageUrl: shotJson["image_url"].stringValue)
+                    var shot = Shot(id: shotJson["id"].intValue, title: shotJson["title"].stringValue, desc: shotJson["description"].stringValue, viewsCount: shotJson["views_count"].intValue, player: player, imageUrl: shotJson["image_url"].stringValue)
 
                     shots.append(shot)
 
