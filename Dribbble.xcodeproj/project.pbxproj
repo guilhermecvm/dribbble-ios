@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6BCBA1D31ABDE1D200F6F137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA1D21ABDE1D200F6F137 /* AppDelegate.swift */; };
-		6BCBA1D51ABDE1D200F6F137 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA1D41ABDE1D200F6F137 /* ViewController.swift */; };
 		6BCBA1D81ABDE1D200F6F137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCBA1D61ABDE1D200F6F137 /* Main.storyboard */; };
 		6BCBA1DA1ABDE1D200F6F137 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BCBA1D91ABDE1D200F6F137 /* Images.xcassets */; };
 		6BCBA1DD1ABDE1D200F6F137 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCBA1DB1ABDE1D200F6F137 /* LaunchScreen.xib */; };
@@ -20,6 +19,9 @@
 		6BCBA2011ABDEC7900F6F137 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA2001ABDEC7900F6F137 /* Player.swift */; };
 		6BCBA2031ABDECE900F6F137 /* DribbbleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA2021ABDECE900F6F137 /* DribbbleAPI.swift */; };
 		6BCBA2051ABDF35A00F6F137 /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA2041ABDF35A00F6F137 /* Alamofire-SwiftyJSON.swift */; };
+		6BCBA2071ABDF80300F6F137 /* ShotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA2061ABDF80300F6F137 /* ShotTableViewCell.swift */; };
+		6BCBA2091ABDF8D400F6F137 /* Alamofire-ResponseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA2081ABDF8D400F6F137 /* Alamofire-ResponseImage.swift */; };
+		6BCBA20B1ABDF93100F6F137 /* ShotListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA20A1ABDF93100F6F137 /* ShotListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 		6BCBA1CD1ABDE1D200F6F137 /* Dribbble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dribbble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCBA1D11ABDE1D200F6F137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BCBA1D21ABDE1D200F6F137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6BCBA1D41ABDE1D200F6F137 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6BCBA1D71ABDE1D200F6F137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BCBA1D91ABDE1D200F6F137 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6BCBA1DC1ABDE1D200F6F137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -50,6 +51,9 @@
 		6BCBA2001ABDEC7900F6F137 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		6BCBA2021ABDECE900F6F137 /* DribbbleAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleAPI.swift; sourceTree = "<group>"; };
 		6BCBA2041ABDF35A00F6F137 /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
+		6BCBA2061ABDF80300F6F137 /* ShotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotTableViewCell.swift; sourceTree = "<group>"; };
+		6BCBA2081ABDF8D400F6F137 /* Alamofire-ResponseImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-ResponseImage.swift"; sourceTree = "<group>"; };
+		6BCBA20A1ABDF93100F6F137 /* ShotListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,6 @@
 				6BCBA1F51ABDE54E00F6F137 /* Model */,
 				6BCBA1F61ABDE54E00F6F137 /* View */,
 				6BCBA1D21ABDE1D200F6F137 /* AppDelegate.swift */,
-				6BCBA1D41ABDE1D200F6F137 /* ViewController.swift */,
 				6BCBA1D61ABDE1D200F6F137 /* Main.storyboard */,
 				6BCBA1D91ABDE1D200F6F137 /* Images.xcassets */,
 				6BCBA1DB1ABDE1D200F6F137 /* LaunchScreen.xib */,
@@ -147,6 +150,7 @@
 		6BCBA1F31ABDE54E00F6F137 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6BCBA20A1ABDF93100F6F137 /* ShotListTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -155,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				6BCBA2041ABDF35A00F6F137 /* Alamofire-SwiftyJSON.swift */,
+				6BCBA2081ABDF8D400F6F137 /* Alamofire-ResponseImage.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 		6BCBA1F61ABDE54E00F6F137 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6BCBA2061ABDF80300F6F137 /* ShotTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,10 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BCBA2051ABDF35A00F6F137 /* Alamofire-SwiftyJSON.swift in Sources */,
-				6BCBA1D51ABDE1D200F6F137 /* ViewController.swift in Sources */,
+				6BCBA2091ABDF8D400F6F137 /* Alamofire-ResponseImage.swift in Sources */,
 				6BCBA1F81ABDEA2000F6F137 /* DribbbleRestAPI.swift in Sources */,
+				6BCBA2071ABDF80300F6F137 /* ShotTableViewCell.swift in Sources */,
 				6BCBA2031ABDECE900F6F137 /* DribbbleAPI.swift in Sources */,
 				6BCBA1D31ABDE1D200F6F137 /* AppDelegate.swift in Sources */,
+				6BCBA20B1ABDF93100F6F137 /* ShotListTableViewController.swift in Sources */,
 				6BCBA2011ABDEC7900F6F137 /* Player.swift in Sources */,
 				6BCBA1FA1ABDEADE00F6F137 /* Shot.swift in Sources */,
 			);
@@ -425,11 +433,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Dribbble/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -439,11 +449,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Dribbble/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
