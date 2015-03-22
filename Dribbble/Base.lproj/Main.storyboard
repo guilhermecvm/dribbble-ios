@@ -5,7 +5,7 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Pagination View Controller-->
+        <!--Dribbble-->
         <scene sceneID="bXy-2S-cAt">
             <objects>
                 <viewController id="9wu-xj-knR" customClass="PaginationViewController" customModule="Dribbble" customModuleProvider="target" sceneMemberID="viewController">
@@ -88,7 +88,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="Fr3-XZ-BS3"/>
+                    <navigationItem key="navigationItem" title="Dribbble" id="Fr3-XZ-BS3"/>
                     <connections>
                         <outlet property="nextButton" destination="Fq9-gb-zfF" id="hMu-q4-fgJ"/>
                         <outlet property="prevButton" destination="jgr-qF-b7f" id="ucp-ut-jp2"/>
@@ -130,7 +130,7 @@
                                                     <rect key="frame" x="10" y="249" width="580" height="40"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnG-6S-6Av">
-                                                            <rect key="frame" x="8" y="9" width="508" height="21"/>
+                                                            <rect key="frame" x="8" y="9" width="480" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="Cia-I0-tJ3"/>
                                                             </constraints>
@@ -147,20 +147,31 @@
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="Rhc-Bh-Yyx">
+                                                            <rect key="frame" x="496" y="10" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="8ir-TO-EPM"/>
+                                                                <constraint firstAttribute="width" constant="20" id="otD-FU-g9v"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="centerY" secondItem="Rhc-Bh-Yyx" secondAttribute="centerY" id="Iaq-ct-GFd"/>
                                                         <constraint firstItem="VWv-cR-aNY" firstAttribute="leading" secondItem="OnG-6S-6Av" secondAttribute="trailing" constant="8" id="Qeb-Lh-Fn7"/>
                                                         <constraint firstAttribute="trailing" secondItem="VWv-cR-aNY" secondAttribute="trailing" constant="8" id="RaK-Yx-jx2"/>
                                                         <constraint firstItem="OnG-6S-6Av" firstAttribute="leading" secondItem="F5f-Yj-7mN" secondAttribute="leading" constant="8" id="asa-Uc-WXG"/>
                                                         <constraint firstItem="OnG-6S-6Av" firstAttribute="leading" secondItem="F5f-Yj-7mN" secondAttribute="leading" constant="8" id="axI-gF-Yei"/>
                                                         <constraint firstAttribute="centerY" secondItem="VWv-cR-aNY" secondAttribute="centerY" constant="0.5" id="d6O-6L-qo5"/>
+                                                        <constraint firstItem="Rhc-Bh-Yyx" firstAttribute="leading" secondItem="OnG-6S-6Av" secondAttribute="trailing" constant="8" id="dzd-3b-gKd"/>
+                                                        <constraint firstItem="VWv-cR-aNY" firstAttribute="leading" secondItem="Rhc-Bh-Yyx" secondAttribute="trailing" constant="8" id="ggu-fM-bft"/>
                                                         <constraint firstAttribute="centerY" secondItem="OnG-6S-6Av" secondAttribute="centerY" constant="0.5" id="hYN-rp-Rj8"/>
                                                         <constraint firstAttribute="height" constant="40" id="lOG-wq-sI0"/>
                                                     </constraints>
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="axI-gF-Yei"/>
+                                                            <exclude reference="Qeb-Lh-Fn7"/>
                                                         </mask>
                                                     </variation>
                                                 </view>
@@ -207,7 +218,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sh3-NS-tlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1195" y="79"/>
+            <point key="canvasLocation" x="1195" y="77"/>
         </scene>
         <!--Shot Detail View Controller-->
         <scene sceneID="RfS-OQ-MFM">
@@ -421,5 +432,6 @@
     <resources>
         <image name="chevron-left" width="12" height="20"/>
         <image name="chevron-right" width="12" height="20"/>
+        <image name="heart" width="23" height="20"/>
     </resources>
 </document>

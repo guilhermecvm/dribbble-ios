@@ -41,7 +41,7 @@ class ShotDetailViewController: UIViewController {
         self.playerImageView.clipsToBounds = true
         
         self.shotTitle.text = shot!.title
-        self.shotViews.text = "\(shot!.viewsCount)"
+        self.shotViews.text = "\(shot!.likesCount)"
         self.shotDescription.text = shot!.desc.html2String
         self.playerName.text = shot!.player.name
     }

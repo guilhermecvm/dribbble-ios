@@ -25,7 +25,7 @@ class ShotTableViewCell: UITableViewCell {
             }
             
             self.shotTitle.text = "\(shot!.title)"
-            self.shotViews.text = "\(shot!.viewsCount)"
+            self.shotViews.text = "\(shot!.likesCount)"
         }
     }
 

@@ -12,14 +12,14 @@ class Shot: NSObject {
     var id: Int
     var title: String
     var desc: String
-    var viewsCount: Int
+    var likesCount: Int
     var player: Player
     var imageUrl: String
    
-    init(id: Int, title: String, desc: String, viewsCount: Int, player: Player, imageUrl: String) {
+    init(id: Int, title: String, desc: String, likesCount: Int, player: Player, imageUrl: String) {
         self.id = id
         self.title = title
-        self.viewsCount = viewsCount
+        self.likesCount = likesCount
         self.player = player
         self.imageUrl = imageUrl
         self.desc = desc
