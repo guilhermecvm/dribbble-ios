@@ -23,19 +23,8 @@ class ShotDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Alamofire.request(.GET, shot!.imageUrl).validate(contentType: ["image/*"]).responseImage() {
-            (request, _, image, error) in
-            if error == nil && image != nil {
-                self.shotImageView.image = image
-            }
-        }
-        
-        Alamofire.request(.GET, shot!.player.avatarUrl).validate(contentType: ["image/*"]).responseImage() {
-            (request, _, image, error) in
-            if error == nil && image != nil {
-                self.playerImageView.image = image
-            }
-        }
+        shotImageView.hnk_setImageFromURL(NSURL(string: shot!.imageUrl)!)
+        playerImageView.hnk_setImageFromURL(NSURL(string: shot!.player.avatarUrl)!)
         
         self.playerImageView.layer.cornerRadius = self.playerImageView.frame.size.width/2
         self.playerImageView.clipsToBounds = true

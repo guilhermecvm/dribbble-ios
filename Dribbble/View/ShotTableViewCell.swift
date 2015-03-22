@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Alamofire
+import Haneke
 
 class ShotTableViewCell: UITableViewCell {
 
@@ -17,15 +17,10 @@ class ShotTableViewCell: UITableViewCell {
     
     var shot: Shot? {
         didSet {
-            Alamofire.request(.GET, shot!.imageUrl).validate(contentType: ["image/*"]).responseImage() {
-                (request, _, image, error) in
-                if error == nil && image != nil {
-                    self.shotImageView.image = image
-                }
-            }
+            shotImageView.hnk_setImageFromURL(NSURL(string: shot!.imageUrl)!)
             
-            self.shotTitle.text = "\(shot!.title)"
-            self.shotViews.text = "\(shot!.likesCount)"
+            shotTitle.text = "\(shot!.title)"
+            shotViews.text = "\(shot!.likesCount)"
         }
     }
 
@@ -39,6 +34,10 @@ class ShotTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    override func prepareForReuse() {
+        shotImageView.image = nil
     }
 
 }

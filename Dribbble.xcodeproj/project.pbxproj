@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B7696F41ABF13B700D37A24 /* PaginationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7696F31ABF13B700D37A24 /* PaginationViewController.swift */; };
+		6B7696F61ABF1D9A00D37A24 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7696F51ABF1D9A00D37A24 /* Haneke.framework */; };
 		6BCBA1D31ABDE1D200F6F137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA1D21ABDE1D200F6F137 /* AppDelegate.swift */; };
 		6BCBA1D81ABDE1D200F6F137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCBA1D61ABDE1D200F6F137 /* Main.storyboard */; };
 		6BCBA1DA1ABDE1D200F6F137 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BCBA1D91ABDE1D200F6F137 /* Images.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		6B7696F31ABF13B700D37A24 /* PaginationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationViewController.swift; sourceTree = "<group>"; };
+		6B7696F51ABF1D9A00D37A24 /* Haneke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Haneke.framework; path = Carthage/Build/iOS/Haneke.framework; sourceTree = "<group>"; };
 		6BCBA1CD1ABDE1D200F6F137 /* Dribbble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dribbble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCBA1D11ABDE1D200F6F137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BCBA1D21ABDE1D200F6F137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			files = (
 				6BCBA1FF1ABDEBAB00F6F137 /* SwiftyJSON.framework in Frameworks */,
 				6BCBA1FE1ABDEBAB00F6F137 /* Alamofire.framework in Frameworks */,
+				6B7696F61ABF1D9A00D37A24 /* Haneke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 			children = (
 				6BCBA1FC1ABDEBAB00F6F137 /* Alamofire.framework */,
 				6BCBA1FD1ABDEBAB00F6F137 /* SwiftyJSON.framework */,
+				6B7696F51ABF1D9A00D37A24 /* Haneke.framework */,
 				6BCBA1CF1ABDE1D200F6F137 /* Dribbble */,
 				6BCBA1E51ABDE1D200F6F137 /* DribbbleTests */,
 				6BCBA1CE1ABDE1D200F6F137 /* Products */,
@@ -295,6 +299,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Haneke.framework",
 			);
 			outputPaths = (
 			);

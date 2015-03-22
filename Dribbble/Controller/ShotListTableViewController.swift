@@ -14,11 +14,6 @@ class ShotListTableViewController: UITableViewController, PaginationViewControll
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var nextButton = UIButton(frame: CGRectMake(100, 100, 64, 64))
-        nextButton.setTitle(">", forState: .Normal)
-        
-        self.view.superview?.addSubview(nextButton)
     }
 
     override func didReceiveMemoryWarning() {
