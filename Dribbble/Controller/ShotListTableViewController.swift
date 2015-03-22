@@ -8,22 +8,29 @@
 
 import UIKit
 
-class ShotListTableViewController: UITableViewController {
+class ShotListTableViewController: UITableViewController, PaginationViewControllerDelegate {
     
     var shots = [Shot]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DribbbleAPI.getPopularShots(1, callback: { (shots, error) -> Void in
-            self.shots = shots
-            self.tableView.reloadData()
-        })
+        var nextButton = UIButton(frame: CGRectMake(100, 100, 64, 64))
+        nextButton.setTitle(">", forState: .Normal)
+        
+        self.view.superview?.addSubview(nextButton)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getShotsFromPage(page: Int) {
+        DribbbleAPI.getPopularShots(page, callback: { (shots, error) -> Void in
+            self.shots = shots
+            self.tableView.reloadData()
+        })
     }
 
     // MARK: - Table view data source
@@ -45,6 +52,11 @@ class ShotListTableViewController: UITableViewController {
 
         return cell
     }
+    
+    // MARK: - PaginationViewControllerDelegate
+    func paginationViewControllerDidGoToPage(page: Int, sender: AnyObject) {
+        getShotsFromPage(page)
+    }
 
     
     // MARK: - Navigation
@@ -54,4 +66,6 @@ class ShotListTableViewController: UITableViewController {
         let shotDetailViewController = segue.destinationViewController as ShotDetailViewController
         shotDetailViewController.shot = (sender as ShotTableViewCell).shot
     }
+    
+    
 }

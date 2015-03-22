@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B7696F41ABF13B700D37A24 /* PaginationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7696F31ABF13B700D37A24 /* PaginationViewController.swift */; };
 		6BCBA1D31ABDE1D200F6F137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCBA1D21ABDE1D200F6F137 /* AppDelegate.swift */; };
 		6BCBA1D81ABDE1D200F6F137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BCBA1D61ABDE1D200F6F137 /* Main.storyboard */; };
 		6BCBA1DA1ABDE1D200F6F137 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BCBA1D91ABDE1D200F6F137 /* Images.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B7696F31ABF13B700D37A24 /* PaginationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationViewController.swift; sourceTree = "<group>"; };
 		6BCBA1CD1ABDE1D200F6F137 /* Dribbble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dribbble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCBA1D11ABDE1D200F6F137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BCBA1D21ABDE1D200F6F137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				6BCBA20A1ABDF93100F6F137 /* ShotListTableViewController.swift */,
 				6BF358961ABE1DE100BACBA8 /* ShotDetailViewController.swift */,
+				6B7696F31ABF13B700D37A24 /* PaginationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			files = (
 				6BCBA2051ABDF35A00F6F137 /* Alamofire-SwiftyJSON.swift in Sources */,
 				6BCBA2091ABDF8D400F6F137 /* Alamofire-ResponseImage.swift in Sources */,
+				6B7696F41ABF13B700D37A24 /* PaginationViewController.swift in Sources */,
 				6BCBA1F81ABDEA2000F6F137 /* DribbbleRestAPI.swift in Sources */,
 				6BCBA2071ABDF80300F6F137 /* ShotTableViewCell.swift in Sources */,
 				6BCBA2031ABDECE900F6F137 /* DribbbleAPI.swift in Sources */,
