@@ -12,10 +12,13 @@ enum DribbbleRestAPI: URLRequestConvertible {
     static var baseURLString: String = ""
     
     case ListPopularShots(Int)
+    case ShotDetail(Int)
     
     var method: Alamofire.Method {
         switch self {
         case .ListPopularShots:
+            return .GET
+        case .ShotDetail:
             return .GET
         }
     }
@@ -24,9 +27,11 @@ enum DribbbleRestAPI: URLRequestConvertible {
         switch self {
         case .ListPopularShots(let page):
             return "/shots/popular?page=\(page)"
+        case .ShotDetail(let id):
+            return "/shots/\(id)"
         }
     }
-    
+
     // MARK: URLRequestConvertible
     
     var URLRequest: NSURLRequest {
